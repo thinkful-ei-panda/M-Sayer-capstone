@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Document</title>
+</head>
+<header>
+  <nav>
+    <h1>NAV</h1>
+  </nav>  
+  </header>
+<body>
+  <div name='recipe'>
+    <section name='recipe-heading'>
+      <h1>recipe name</h1>
+      <h5>by author</h5>
+      <section>image placeholder</section>
+    </section>
+    <section>
+    <h3>about this recipe</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex voluptatum impedit modi exercitationem magnam laboriosam excepturi similique minus quis temporibus quaerat rerum tenetur voluptatibus ducimus, beatae non tempora officia.</p>
+    </section>
+    <h3>the details</h3>
+    <section className='recipe-info'>
+      <p><strong>prep-time: </strong>x minutes</p> 
+      <p><strong>servings: </strong>serving size</p>
+      <p><strong>vegetarian: </strong>y/n</p>
+      <p><strong>ingredients:</strong></p>
+      <ul className='ingredients-list'>
+        <li>ingredient</li>
+        <li>ingredient</li>
+        <li>ingredient</li>
+      </ul>
+    </section>
+    <h3>the steps</h3>
+    <section name='recipe-steps'>
+      <ul>
+        <li>step 1</li>
+        <li>step 2</li>
+        <li>step 3</li>
+      </ul>
+    </section>
+  </div>
+  <div name='comment-form-container'>
+    <h4>send your regards to the chef!</h4>
+  <form name='comment-form'>
+    <label> 
+      Name:
+      <input required type='text' id='comment-name'>
+    </label>
+    <label>
+      Comment:
+      <textarea required type='text' id='comment-body'></textarea>
+      </label>
+    <input type='submit' />
+  </form>
+  </div>
+</body>
+</html>

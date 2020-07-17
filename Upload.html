@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Document</title>
+</head>
+<header>
+  <nav>
+    <h1>NAV</h1>
+  </nav>  
+  </header>
+<body>
+  <div>
+    upload form
+  </div>
+  <div name='create-recipe'>  
+    <h3>add a recipe</h3>
+    
+    <form name='recipe-form'>
+      <label>tell us your name:
+        <input required type='text' id='author' />
+      </label>
+      <label>recipe name:
+        <input required type='text' id='name' />
+      </label>
+      <label>tell us about this recipe:
+      <textarea required id='story'></textarea>
+      </label>
+      <label>what type of dish is it?
+        <select required id='type'>
+          <option value=''>select</option>
+          <option value='appetizer'>appetizer</option>
+          <option value='main'>main</option>
+          <option value='side'>side</option>
+          <option value='dessert'>dessert</option>
+          <option value='beverage'>beverage</option>
+        </select>
+      </label>
+      <label>is it vegetarian?
+        <select required id='vegetarian'>
+            <option value=''>select</option>
+            <option value={true}>yes</option>
+            <option value={false}>no</option>
+          </select>
+      </label>
+      <label>would you like to upload an image?
+        <select required id='imageSearch'>
+          <option value=''>select</option>
+          <option value={true}>yes</option>
+          <option value={false}>no</option>
+        </select>
+      </label>
+      <label>how long does it take to prepare this item?
+        <select required id='prepTimeMinutes'>
+          <option value='0'>minutes</option>
+          <option value='15'>15 minutes</option>
+          <option value='30'>30 minutes</option>
+          <option value='45'>45 minutes</option>
+        </select>
+        <select id='prepTimeHours' >
+        <option value=''>hours</option>
+          <option value='60'>1 hour</option>
+          <option value='120'>2 hours</option>
+          <option value='180'>3 hours</option>
+        </select>
+      </label>
+      <label>how many servings does it yield?
+        <select required id='servings' >
+          <option value=''>select</option>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+          <option value='4'>4</option>
+          <option value='5'>5</option>
+          <option value='6'>6</option>
+          <option value='7'>7</option>
+          <option value='8'>8</option>
+          <option value='9'>9</option>
+          <option value='10'>10</option>
+        </select>
+      </label>
+      <label>what are the ingredients?
+        <textarea required id='ingredients'></textarea>
+      </label>
+      <label>how do we make it?
+      <textarea required id='steps'></textarea>
+      </label>
+        <section className='center-form-button'>
+        <input type='submit' />
+        </section>
+    </form>
+  </div>
+</div>  
+</body>
+</html>
